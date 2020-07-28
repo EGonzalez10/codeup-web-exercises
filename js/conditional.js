@@ -162,3 +162,24 @@ alert("Your bill after the discount is $" + totalAfterDiscount.toFixed(2));
  * HINT: The way we prompt for a value could be improved
  */
 
+function getNumberFromUser () {
+    var userInput = parseFloat(prompt("Please enter an integer number."))
+    if (isNan(userInput)) {
+        alert("That's not a number!");
+    } else {
+        return userInput;
+    }
+}
+
+
+
+var userWantsToPlay = confirm("Do you want to enter a number?");
+if (userWantsToPlay) {
+    var usersNumber = parseInt(prompt("Please enter a number."));
+    if (usersNumber % 2) {
+        alert("Your number is even.");
+    } else {
+        alert("Your number is ood.");
+    }
+    alert("Your number plus one hundres is " + (usersNumber + 100));
+    alert("Your number number is " + (usersNumber < 0 ? "negative": "positive") + ".");
