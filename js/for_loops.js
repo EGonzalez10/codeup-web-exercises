@@ -1,25 +1,13 @@
-function showMultiplicationTable(input){
-for (var x = 1; x < 11; x++){
-console.log((input + '*' + x + '=' + (input * x)))
-}
-}
-showMultiplicationTable(1);
-showMultiplicationTable(2);
-showMultiplicationTable(3);
-showMultiplicationTable(4);
-showMultiplicationTable(5);
-showMultiplicationTable(6);
-showMultiplicationTable(7);
-showMultiplicationTable(8);
-showMultiplicationTable(9);
-showMultiplicationTable(10);
-
-// Don't modify the following line, it generates a random number between 1 and 3
-// and stores it in a variable named random
+// function showMultiplicationTable(input){
+//     for (var x = 1; x <= 10; x++){
+//         console.log((input + ' x ' + x + " = " + (input * x) ))
+//         }
+//     }
+// showMultiplicationTable(7)
 
 
 // var random = Math.floor((Math.random() * 180) + 20);
-// for (var x = 0; x<= 10; x++) {
+// for (var x = 1; x<= 10; x++) {
 //     var random = Math.floor((Math.random() * 180) + 20);
 //     if (random % 2 === 0){
 //         console.log(random + " is and even number.");
@@ -28,18 +16,30 @@ showMultiplicationTable(10);
 //     }
 // }
 
-
-// for (var x = 1; x < 10; x++) {
-//     var tier = x.toString();
-//     for (var y = 1; y < x; y++);{
-//         tier += x;
-//     }
-//     console.log(tier);
+// function getRandomInt(min, max) {
+//     return Math.floor(Math.random() * (max - min +1) + min);
 // }
-
-// for (var x = 100; x > 0; x-=5){
-//         console.log(x)
+//
+// for(var x = 1; x <= 10; x++) {
+//     var randomNumber = getRandomInt(20, 200);
+//
+//     if (randomNumber % 2 === 0) {
+//         console.log(randomNumber + " is even");
+//     } else {
+//         console.log(randomNumber + " is odd");
 //     }
-
+// }
+//
+//
+// for (var z = 1; z <= 9; z++) {
+//     console.log(z.toString().repeat(z));
+// }
+//
+//
+//
+// for (var w = 100; w > 0; w-=5){
+//         console.log(w)
+//     }
+//
 
 
