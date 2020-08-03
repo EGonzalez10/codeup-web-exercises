@@ -47,4 +47,6 @@
 
 document.write(planetsFinalList);
 
+
+
 })();
