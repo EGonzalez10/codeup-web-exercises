@@ -19,3 +19,4 @@ do {
     }
 } while (allCones > 0);
 console.log('Yay! I sold them all!');
+
