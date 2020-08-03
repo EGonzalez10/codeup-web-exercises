@@ -32,20 +32,18 @@
     var planetsBreak = planetsArray.join("<br>");
     console.log(planetsBreak);
 
-    // console.log(planetsString);
-    // var planetsStr2 = planetsArray.push("<ul>").unshift("<ul>");
-    // console.log(planetsStr2)
 
-    var planetsListArray = [];
-    planetsArray.forEach(function(element ) {
-    planetsListArray.push("<li>" + element + "</li>");
+
+    var planetsListArray = "<ul>";
+
+    planetsArray.forEach(function(planet ) {
+    planetsListArray += ("<li>" + planet + "</li>");
 });
 
-    var planetsFinalList = planetsListArray.join("");
-    planetsFinalList = "<ul>" + planetsFinalList + "</ul>"
-    console.log(planetsFinalList);
+    planetsListArray += "</ul>";
+    console.log(planetsListArray);
 
-document.write(planetsFinalList);
+document.write(planetsListArray);
 
 
 
