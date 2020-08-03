@@ -22,10 +22,10 @@
      * Create log statements that will print each of the names individually by
      * accessing each element's index.
      */
-    console.log(names["0"]);
-    console.log(names["1"]);
-    console.log(names["2"]);
-    console.log(names["3"]);
+    console.log(names[0]);
+    console.log(names[1]);
+    console.log(names[2]);
+    console.log(names[3]);
 
     /**
      * TODO:
@@ -57,6 +57,8 @@
      *  > second([1, 2, 3, 4, 5]) // returns 2
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
+
+
 
     var list = ["1", "2" , "3", "4", "5"]
     function first(array) {
