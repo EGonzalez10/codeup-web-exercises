@@ -1,15 +1,15 @@
-//
-// while(true) {
-//     var randomNumber = parseInt(prompt("Give me an odd number between 1 and 50."));
-//     if (randomNumber % 2 !== 0 && randomNumber <= 50 && randomNumber >= 1) {
-//         break;
-//     }
-// }
-// console.log ("Number to skip is: " + randomNumber);
-// for (var i = 1; i <= 50; i+=2) {
-//     if (i === randomNumber) {
-//         console.log('Yikes! Skipping number:' + i);
-//         continue;
-//     }
-//     console.log('Here is odd number: ' + i);
-// }
+while(true) {
+    var input = parseInt(prompt("Choose an odd number between 1 and 50."));
+    if (input % 2 !== 0 && input <= 50 && input >= 1) {
+        break;
+    }
+}
+console.log("Number to skip is: " + input)
+
+for (var a = 1; a < 50; a +=2) {
+    if (a === input){
+        console.log("Yikes! Skipping number " + a);
+        continue;
+    }
+        console.log("Here is an odd number: " + a);
+}
