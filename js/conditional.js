@@ -183,3 +183,5 @@ if (userWantsToPlay) {
     }
     alert("Your number plus one hundres is " + (usersNumber + 100));
     alert("Your number number is " + (usersNumber < 0 ? "negative": "positive") + ".");
+
+    //checking
