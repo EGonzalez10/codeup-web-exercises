@@ -1,5 +1,5 @@
-// (function() {
-//     "use strict";
+(function() {
+    "use strict";
 
     /**
      * TODO:
@@ -54,15 +54,14 @@
         {name: 'Ryan', amount: 250},
         {name: 'George', amount: 320}
     ];
-
     function totalHeb (shopper) {
         var discount = (shopper.amount * 12/100);
         var total = (shopper.amount - discount);
         if (shopper.amount < 200) {
-            console.log("Sorry " + shopper.name + "...Your total today is: $" + shopper.amount + ", while is less than $200, you do not qualify for our 12% discount. You will still pay the original total of: $" + shopper.amount + ".");
+            console.log("Sorry " + shopper.name + "...Your total today is: $" + shopper.amount.toFixed(2) + ", while is less than $200, you do not qualify for our 12% discount. You will still pay the original total of: $" + shopper.amount.toFixed(2) + ".");
         } else {
             (shopper.amount >= 200)
-            console.log("Greetings " + shopper.name + "! Your current total is: $" + shopper.amount + ". This qualifies for our 12% discount and you will save: $" + discount + ". Your new total is: $" +total);
+            console.log("Greetings " + shopper.name + "! Your current total is: $" + shopper.amount.toFixed(2) + ". This qualifies for our 12% discount and you will save: $" + discount.toFixed(2) + ". Your new total is: $" + total.toFixed(2));
         }
     }
 shoppers.forEach(totalHeb);
@@ -182,6 +181,22 @@ books.forEach(function (book) {
      *   `showBookInfo` function.
      */
 
+    function createBook(title, authorFirstName, authorLastName, booksArray) {
+        var newBook = {
+            title: title,
+            author: {
+                firstName: authorFirstName,
+                lastName: authorLastName
+            }
+        }
+
+        booksArray.push(newBook);
+        return booksArray;
+    }
+
+    createBook("Ahhhhhh", "Edgar", "Gonzalez", books);
+
+    loggingBooks(books);
 
 
-// })();
+})();
