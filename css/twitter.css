@@ -86,7 +86,7 @@ a {
 }
 .media-image {
     max-width: 50px;
-    float: ;
+    float: left;
     margin:1.33em;
 }
 .btn {
