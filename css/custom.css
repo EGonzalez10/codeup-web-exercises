@@ -2,6 +2,11 @@
     background-image: url("../img/pizza.png");
 }
 
-body{
-    background-color: lightskyblue;
+.jumbotron h1 {
+    background-color: #ffffff;
+    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }
+
