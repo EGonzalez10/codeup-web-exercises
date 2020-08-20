@@ -16,12 +16,15 @@
     justify-content: flex-start;
 }
 
-.pizza-order{
-    align-items: start;
+.card-header{
+    display: flex;
+    justify-content: flex-start;
+    color: white;
 }
+
 .list-group-item{
     display: flex;
-    align-items: center;
+    align-content: center;
 }
 
 
