@@ -68,14 +68,49 @@
             </li>
         </ul>
     </div>
-
-
-
-
-
-
 </div>
 
+
+<div class="tab-content">
+    <div class="tab-pane container active card text-center" id="size-and-crust">
+        <form action="pizza-order">
+            <div class="card-header bg-primary">Choose size and crust</div>
+            <div class="card-body">
+                <ul class="list-group hand-tossed">
+                    <li class="list-group-item header">
+                        Hand Tossed
+                    </li>
+                    <li class="list-group-item">
+                        Garlic seasoned crust with a rich, buttery taste
+                    </li>
+                    <li class="list-group-item">
+                        <input type="radio" id="small" name="size">
+                        <label for="small">Small (10")</label>
+                    </li>
+                    <li class="list-group-item">
+                        <input type="radio" id="medium" name="size" >
+                        <label for="medium">Medium (12")</label>
+                    </li>
+                </ul>
+                <ul class="list-group crispy mt-4">
+                    <li class="list-group-item header">
+                        Crispy Thin
+                    </li>
+                    <li class="list-group-item">
+                        Thin enough for optimum crispy to crunchy ratio
+                    </li>
+                    <div>
+                        <li class="list-group-item"> <input type="radio" id="medium-crispy" name="size-crispy">
+                            <label for="medium-crispy">Medium (12") </label></li>
+                        <li class="list-group-item"> <input type="radio" id="large" name="size-crispy" >
+                            <label for="large">Large (14")</label></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="card-footer text-muted">
+                <a href="toppings" class="btn btn-lg btn-primary page-1">Next Step &raquo</a>
+            </div>
+    </div>
 
 
 

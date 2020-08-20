@@ -10,3 +10,23 @@
     padding: 10px;
 }
 
+.tab-content{
+    display flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.pizza-order{
+    align-items: start;
+}
+.list-group-item{
+    display: flex;
+    align-items: center;
+}
+
+
+.card-footer{
+    display: flex;
+    justify-content: flex-end;
+}
+
