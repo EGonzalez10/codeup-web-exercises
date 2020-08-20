@@ -21,12 +21,9 @@
     justify-content: flex-start;
     color: white;
 }
-
-.list-group-item{
-    display: flex;
-    align-content: center;
+.list-group{
+    text-align: left;
 }
-
 
 .card-footer{
     display: flex;
