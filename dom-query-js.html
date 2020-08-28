@@ -25,6 +25,19 @@
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
 
+
+
+<button id="btn1">Click Me!</button>
+<br>
+<br>
+<button id="btn2">Click Me!!</button>
+<br>
+<br>
+<button id="btn3">Click Me!!!</button>
+<br>
+<br>
+<button id="btn4">Click Me!!!!</button>
+
 <script>
     (function() {
         "use strict";
@@ -32,12 +45,26 @@
         var mainHeader = document.getElementById('main-header');
         console.log(mainHeader);
 
+
+
+
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
 
         console.log(mainHeader.innerHTML); // Prints Hello World!
 
         // Assign a new value to the inner HTML of the main heading
-        mainHeader.innerHTML = "Javascript is Cool";
+
+        var listener = function (event) {
+            alert('You clicked the button!');
+        }
+
+        // add event listener to btn1
+        var btn1 = document.getElementById('btn1');
+        btn1.addEventListener('click', mainHeader.innerHTML = "Javascript is Cool");
+
+
+
+
 
         console.log(mainHeader.innerHTML); // Prints Hello Codeup!
 
@@ -78,6 +105,7 @@
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
         subParagraphs[0].innerText = "Mission Accomplished!"
         console.log(subParagraphs);
+
 
     })();
 
