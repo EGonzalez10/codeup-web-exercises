@@ -14,7 +14,13 @@
 
 //TODO TOGETHER: Set map to Dallas area using the coordinates [-96.8057, 32.7787]
 
-
+mapboxgl.accessToken = mapboxToken;
+// var map = new mapboxgl.Map({
+//     container: 'map',
+//     style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
+//     center: [-96.8057, 32.7787], // starting position [lng, lat]
+//     zoom: 9 // starting zoom
+// });
 
 
 
@@ -34,6 +40,14 @@
 // TODO TOGETHER: Change the color of the marker
 
 
+// var markerOption = {
+//     color: "red"
+// }
+//
+// var marker = new mapboxgl.Marker(markerOption)
+//     .setLngLat([-96.8084, 32.7799])
+//     .addTo(map);
+
 
 
 
@@ -50,15 +64,32 @@
 
 
 // TODO TOGETHER: Add a popup to the map over codeup. Set the html as a paragraph that says "Codeup Rocks!"
-
+// var popup = new mapboxgl.Popup()
+//     .setLngLat([-96.8084, 32.7799])
+//     .setHTML("<p>Codeup Rocks!</p>")
+//     .addTo(map)
 
 
 
 // TODO TOGETHER: Comment out the popup we just added. Add a popup to the Sixth Floor Musume marker.
 
+// var popupMuseum = new mapboxgl.Popup()
+//     .setHTML("<h4>Sixth Floor Museum </h4>")
+//     .addTo(map)
+//
+// marker.setPopup(popupMuseum)
+
 
 // TODO: Review the popup docs. What are some additional options we can pass to the popup?
 // TODO: Try setting the text by using ".setText()" instead of ".setHTML()"
+
+// var popup = new mapboxgl.Popup()
+//     .setLngLat([-96.8101,32.7903])
+//     .setText("<h4>American Airlines Center</h4>")
+//     .addTo(map)
+
+
+
 
 
 
@@ -70,7 +101,16 @@
 
 // TODO TOGETHER: Using the Geocoder helper function, log the coordinates of Codeup and recenter the map to focus on Codeup. Comment out previous map code.
 
-
+geocode("701 Commerce St. Dallas, TX, 75202", mapboxToken)
+    .then(function(result){
+    console.log(result)
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
+            center: result, // starting position [lng, lat]
+            zoom: 16 // starting zoom
+        });
+});
 
 
 
