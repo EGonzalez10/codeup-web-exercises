@@ -16,12 +16,15 @@ geocode("5100 Belt Line Rd Ste 520, Dallas, TX 75254", mapboxToken)
             style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
             center: result, // starting position [lng, lat]
             zoom: 15 // starting zoom
+
+            var marker = new mapboxgl.Marker()
+                .setLngLat([-96.821420,32.952160)
+                .addTo(map);
+
         });
     });
 
-var marker = new mapboxgl.Marker()
-    .setLngLat([-96.821420,32.952160)
-    .addTo(map);
+
 
 
 
